@@ -42,7 +42,6 @@ export class OpenIssuesComponent implements OnInit {
     this.issueServiceService.fetchOpenIssuesCount(userInfo).subscribe (
 
       response => {
-              alert(response)
               this.userInfo.issueCount = response;
               this.outputScreen = true;
               this.inputScreen = false;
