@@ -13,7 +13,7 @@ export class IssuesServiceService {
 
   fetchOpenIssuesCount(user: UserInfo): Observable<any> {
       
-      return this.http.get(`http://127.0.0.1:5000/issues?owner=${user.owner}&reponame=${user.repositoryName}`);
+      return this.http.get(`https://sleepy-chamber-42828.herokuapp.com/issues?owner=${user.owner}&reponame=${user.repositoryName}`);
 
   }
 }
